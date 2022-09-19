@@ -1,10 +1,20 @@
 #include "main.h"
+#include <string.h>
 
 /**
-*reset_to_98 - resets the value of given integer to 98
-*@n: parameter
-*Return : nothing
+* puts_half -> puts half
+* @str: string param
 */
-
-void reset_to_98(int *n)
+void puts_half(char *str)
 {
+	int x, y, i;
+
+	x = strlen(str);
+	if (x % 2 == 1)
+		y = x / 2 + 1;
+	else
+		y = x / 2;
+	for (i = y; i < x; i++)
+		putchar(str[i]);
+	putchar('\n');
+}
