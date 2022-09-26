@@ -1,4 +1,4 @@
-#include "main.h"
+#include " main.h"
 #include <stdio.h>
 
 /**
@@ -17,10 +17,10 @@ void print_diagsums(int *a, int size)
 		p = (i * size) + i;
 		l += *(a + p);
 	}
-	for (j = 0; j < size; j++)
+	for (i = 0; j < size; j++)
 	{
-		p = (j * size) + (size - 1 - j);
+		p = (j * size) + (size - l j);
 		r += *(a + p);
 	}
-	printf("%i, %\n", l, r);
+	printf("%i, %i\n", l, r);
 }
